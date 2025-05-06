@@ -1,0 +1,91 @@
+/* ========================================
+   🔤 Estilo para los Títulos de los Productos
+   ======================================== */
+   .woocommerce ul.products li.product h2.woocommerce-loop-product__title {
+    color: #FFFFFF; /* Color del título del producto */
+    font-size: 16px; /* Tamaño de la fuente del título */
+    line-height: 1.3; /* Espaciado entre líneas */
+    white-space: normal; /* Permite saltos de línea si es necesario */
+    text-align: center; /* Centra el texto */
+    display: -webkit-box; /* Limita el número de líneas */
+    -webkit-line-clamp: 3; /* Limita a 3 líneas de texto */
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Oculta el desbordamiento */
+    min-height: 60px; /* Asegura que todos los títulos ocupen al menos 3 líneas */
+}
+
+/* ========================================
+   💰 Estilo para los Precios de los Productos
+   ======================================== */
+.woocommerce ul.products li.product .price {
+    color: #ffd7bc; /* Color del precio */
+    font-size: 1.1rem; /* Tamaño de la fuente del precio */
+    text-align: center; /* Centra el precio */
+}
+
+/* ========================================
+   🖼️ Estilo para las Imágenes de los Productos
+   ======================================== */
+.woocommerce ul.products li.product img {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    height: auto; /* Ajusta la altura proporcionalmente */
+    max-height: 250px; /* Ajusta la altura máxima */
+    object-fit: cover; /* Recorta la imagen para cubrir el espacio */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+/* ========================================
+   🖼️ Efecto Hover en la Imagen del Producto
+   ======================================== */
+.woocommerce ul.products li.product:hover img {
+    transform: scale(1.05); /* Escala la imagen al hacer hover */
+}
+
+/* ========================================
+   🧱 Estilo para los Contenedores de los Productos
+   ======================================== */
+.woocommerce ul.products li.product {
+    width: 44%; /* Define el ancho del contenedor del producto */
+    padding: 15px; /* Relleno interno del contenedor */
+    margin: 1%; /* Margen entre los productos */
+    box-sizing: border-box; /* Asegura que el padding y el border no afecten el tamaño */
+    transition: box-shadow 0.3s ease; /* Transición para el efecto hover */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 0 transparent; /* Sin sombra al inicio */
+    
+    display: flex; /* Usamos flexbox para el contenedor */
+    flex-direction: column; /* Apilamos los elementos verticalmente */
+    justify-content: space-between; /* Distribuye el contenido equitativamente */
+    height: 100%; /* Hace que el contenedor ocupe todo el espacio disponible */
+    min-height: 400px; /* Altura mínima para todos los contenedores */
+    background: #1e1e1e; /* Fondo oscuro para resaltar el producto */
+}
+
+/* ========================================
+   🧱 Efecto Hover en el Contenedor del Producto
+   ======================================== */
+.woocommerce ul.products li.product:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+}
+
+/* ========================================
+   🧭 Estilo para el Grid General de los Productos
+   ======================================== */
+.woocommerce ul.products {
+    display: flex; /* Usamos flexbox para alinear los productos */
+    flex-wrap: wrap; /* Permite que los productos se ajusten a varias filas */
+    justify-content: center; /* Centra los productos horizontalmente */
+    gap: 20px; /* Espacio entre los productos */
+    padding: 0; /* Sin relleno en el contenedor */
+}
+
+/* ========================================
+   🖥️ Estilos para Pantallas Grandes (mayores a 1024px)
+   ======================================== */
+@media (min-width: 1024px) {
+    .woocommerce ul.products {
+        justify-content: center; /* Centra los productos en pantallas grandes */
+        gap: 20px; /* Mantiene el espaciado entre productos */
+    }
+}
