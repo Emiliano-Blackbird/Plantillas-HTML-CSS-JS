@@ -1,0 +1,32 @@
+<!--
+Mini proyecto: Medidor de batería dinámico con HTML.
+El valor del medidor de batería se actualiza en tiempo real según un control deslizante.
+Este ejemplo permite explorar cómo funciona el elemento <meter> y cómo personalizarlo.
+-->
+
+<label for="bateria">
+  Batería: <span id="porcentaje">80%</span>
+</label>
+<meter id="bateria"
+  value="80"
+  min="0"
+  max="100"
+  low="20"
+  high="60"
+  optimum="100">
+</meter>
+
+<!-- Un input de ejemplo para modificar el valor (puedes cambiarlo por tu lógica) -->
+<input type="range" min="0" max="100" value="80" id="controlBateria">
+
+<script>
+  const bateria = document.getElementById('bateria');
+  const porcentaje = document.getElementById('porcentaje');
+  const control = document.getElementById('controlBateria');
+
+  control.addEventListener('input', () => {
+    const nuevoValor = control.value;
+    bateria.value = nuevoValor;
+    porcentaje.textContent = `${nuevoValor}%`;
+  });
+</script>
