@@ -1,6 +1,4 @@
----
-
-### Estructura de la plantilla Sass (7-1 pattern), utilizando @use y @forward
+**Estructura de la plantilla Sass (7-1 pattern), utilizando @use y @forward**
 
 - **abstracts**: defines variables globales, funciones y mixins (sin generar CSS directo).
 - **base**: resets, tipografía global y estilos básicos del sitio.
@@ -9,5 +7,3 @@
 - **pages**: estilos específicos de una página única.
 - **themes**: variaciones de diseño (claro, oscuro, etc.).
 - **vendors**: integraciones con librerías externas (Bootstrap, Normalize, etc.).
-
----
