@@ -5,14 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contador Click</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <h1>Contador: <span id="valor">0</span></h1>
-  <p>Haz clic en el botón para incrementar el contador.</p>
-  <button id="incrementar">Incrementar</button>
-  <button id="disminuir">Disminuir</button>
-  <button id="reiniciar">Reiniciar</button>
+<div class="container">
+  <h1>Contador interactivo 🧮</h1>
+  <div id="valor" class="numero">0</div>
+
+  <div class="botones">
+    <button id="incrementar">+1</button>
+    <button id="disminuir">-1</button>
+    <button id="reiniciar">Reset</button>
+  </div>
+</div>
 
   <script src="script.js"></script>
 </body>

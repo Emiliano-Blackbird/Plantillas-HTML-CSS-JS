@@ -8,10 +8,23 @@ const botonReiniciar = document.getElementById("reiniciar");
 let contador = Number(localStorage.getItem("contador")) || 0;
 
 // Actualiza número, guarda en localStorage y aplica color
+let ultimoContador = contador;
 function actualizarVista() {
+  const cambio = contador - ultimoContador;
   valor.textContent = contador.toLocaleString("es-ES");
   localStorage.setItem("contador", contador);
   actualizarColor();
+
+  // Animación visual al cambiar
+  valor.classList.remove("subiendo", "bajando");
+  if (cambio > 0) {
+    valor.classList.add("subiendo");
+  } else if (cambio < 0) {
+    valor.classList.add("bajando");
+  }
+  setTimeout(() => valor.classList.remove("subiendo", "bajando"), 200);
+
+  ultimoContador = contador;
 }
 
 // Cambia color según valor
