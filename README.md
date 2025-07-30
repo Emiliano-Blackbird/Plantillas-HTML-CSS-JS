@@ -18,6 +18,16 @@ A curated collection of custom templates using HTML, CSS, and JavaScript
 
 ![Preview](./previews_img_projects/styles_wordpress_preview.png)
 
+## Contador con Click
+
+![Preview](./previews_img_projects/preview-contador.png)
+
+## Slider
+
+![Preview](./previews_img_projects/preview-harley-slider.png)
+
+![Preview](./previews_img_projects/preview-harley-full.png)
+
 ## 👨‍💻 Author
 
  - Emiliano Blackbird (Emiliano Perez Paponi)
