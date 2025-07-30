@@ -9,19 +9,23 @@
   </head>
 
   <body>
-    <h1>Slider With Swiper Demo</h1>
+    <header class="header">
+      <div class="logo-container">
+        <h1>Slider Demo</h1>
+        <img src="img/harley-davidson-06.svg" alt="Harley Davidson Logo" class="logoHarley" />
+      </div>
+    </header>
 
     <section>
       <div class="swiperContainer">
         <!-- Swiper -->
       <div class="swiper miPrimerSlider">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/harley-davidson-01.svg" style="width: 400px; height: auto;" alt=""></div>
-          <div class="swiper-slide"><img src="img/harley-davidson-02.svg" style="width: 400px; height: auto;" alt=""></div>
-          <div class="swiper-slide"><img src="img/harley-davidson-03.svg" style="width: 400px; height: auto;" alt=""></div>
-          <div class="swiper-slide"><img src="img/harley-davidson-04.svg" style="width: 400px; height: auto;" alt=""></div>
-          <div class="swiper-slide"><img src="img/harley-davidson-05.svg" style="width: 400px; height: auto;" alt=""></div>
-          <div class="swiper-slide"><img src="img/harley-davidson-06.svg" style="width: 400px; height: auto;" alt=""></div>
+          <div class="swiper-slide"><img src="img/harley-davidson-01.svg" class="slide-image" alt=""></div>
+          <div class="swiper-slide"><img src="img/harley-davidson-02.svg" class="slide-image" alt=""></div>
+          <div class="swiper-slide"><img src="img/harley-davidson-03.svg" class="slide-image" alt=""></div>
+          <div class="swiper-slide"><img src="img/harley-davidson-04.svg" class="slide-image" alt=""></div>
+          <div class="swiper-slide"><img src="img/harley-davidson-05.svg" class="slide-image" alt=""></div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -29,6 +33,15 @@
       </div>
       </div>
     </section>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="">Harley Davidson</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Buy</a></li>
+        <li><a href="">About Us</a></li>
+      </ul>
+    </nav>
 
     <script type="module" src="/src/main.js"></script>
   </body>
