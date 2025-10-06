@@ -1,0 +1,1 @@
+## Utilizar "npm run dev" para iniciar la demo de slider.
