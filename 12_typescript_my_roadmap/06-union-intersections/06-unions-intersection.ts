@@ -5,7 +5,7 @@ type Off = { estado: "Apagada" };
 type EstadoLuz = On | Off;
 
 function presionarBoton(e: EstadoLuz) {
-  if (e.estado === "Encendida") {
+  if (e.estado === "Encendida") {  // Narrowing
     console.log(`Encendiendo...`)
   } else {
     console.log(`La luz está apagada`)
@@ -20,7 +20,7 @@ type Empleado = { salario: number };
 
 type Trabajador = Persona & Empleado;
 
-function info(t: Trabajador) {
+function info(t: Trabajador) {  // Narrowing
   console.log(`Nombre del empleado ${t.nombre} Salario ${t.salario}`);
 }
 // Creo un ejemplo de Trabajador
@@ -35,7 +35,7 @@ info(dev1);
 type Resultado = number | string;
 
 function procesar(r: Resultado) {
-  if (typeof r === "string") {
+  if (typeof r === "string") {  // Narrowing
     console.log("Texto procesado")
   } else {
     console.log("Número procesado")
